@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Análise</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background: #1a1a2e;
+            color: #eaeaea;
+        }
+        .sidebar {
+            width: 300px;
+            background: #16213e;
+            padding: 20px;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+        .sidebar h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 10px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .panel {
+            background: #0f3460;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            flex: 1 1 calc(50% - 20px);
+            min-width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .panel:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .panel h2 {
+            margin-top: 0;
+            color: #e94560;
+        }
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            background: #16213e;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .metric span {
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #16213e;
+            color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <h1>Resultados</h1>
+    <p>Este painel apresenta os resultados das análises de grafos, organizados em categorias.</p>
+</div>
+<div class="main-content">
+
+    <div class="panel">
+        <h2>Rede: Deezer</h2>
+    
+        <div class="metric">
+            <span>Grau medio:</span>
+            <span>6.559315441462466</span>
+        </div>
+        
+        <div class="metric">
+            <span>Numero componentes:</span>
+            <span>1</span>
+        </div>
+        
+        <div class="metric">
+            <span>Tamanho maior componente:</span>
+            <span>28281</span>
+        </div>
+        
+        <div class="metric">
+            <span>Numero arestas pontes:</span>
+            <span>6470</span>
+        </div>
+        </div>
+    <div class="panel">
+        <h2>Rede: Facebook</h2>
+    
+        <div class="metric">
+            <span>Grau medio:</span>
+            <span>15.220471740097908</span>
+        </div>
+        
+        <div class="metric">
+            <span>Numero componentes:</span>
+            <span>1</span>
+        </div>
+        
+        <div class="metric">
+            <span>Tamanho maior componente:</span>
+            <span>22470</span>
+        </div>
+        
+        <div class="metric">
+            <span>Numero arestas pontes:</span>
+            <span>2973</span>
+        </div>
+        </div>
+    <div class="panel">
+        <h2>Rede: Lastfm</h2>
+    
+        <div class="metric">
+            <span>Grau medio:</span>
+            <span>7.2943336831059815</span>
+        </div>
+        
+        <div class="metric">
+            <span>Numero componentes:</span>
+            <span>1</span>
+        </div>
+        
+        <div class="metric">
+            <span>Tamanho maior componente:</span>
+            <span>7624</span>
+        </div>
+        
+        <div class="metric">
+            <span>Numero arestas pontes:</span>
+            <span>1929</span>
+        </div>
+        </div>
+<div class="panel">
+    <h2>Scientometrics</h2>
+    <div class="metric">
+        <span>Densidade do Grafo:</span>
+        <span>0.0022</span>
+    </div>
+    <div class="metric">
+        <span>Grau Médio de Entrada:</span>
+        <span>3.01</span>
+    </div>
+    <div class="metric">
+        <span>Grau Médio de Saída:</span>
+        <span>3.01</span>
+    </div>
+    <div class="metric">
+        <span>Componentes Fortemente Conectados:</span>
+        <span>1369</span>
+    </div>
+    <div class="metric">
+        <span>Componentes Fracamente Conectados:</span>
+        <span>16</span>
+    </div>
+    <div class="metric">
+        <span>Ciclos Encontrados:</span>
+        <span>2</span>
+    </div>
+</div>
+</div>
+<footer>
+    <p>&copy; 2024 Análise de Grafos. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
